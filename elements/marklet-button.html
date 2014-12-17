@@ -1,0 +1,16 @@
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<polymer-element name="marklet-button" attributes="name marklet">
+	<template>
+		<paper-button raised noink>
+			<a href="{{marklet}}">{{name}}</a>
+		</paper-button>
+	</template>
+	<script>
+		Polymer({
+			ready: function () {
+				this.name = 'Bookmarklet';
+			}
+		});
+	</script>
+</polymer-element>
